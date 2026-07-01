@@ -40,15 +40,18 @@ export default function Faq() {
   const toggle = (key) => setOpenKey((prev) => (prev === key ? null : key))
 
   return (
-    <section className="border-t border-gray-100 py-16">
+    <section className="border-t border-gray-100 py-20">
       <div className="max-w-3xl mx-auto px-4 md:px-8">
+        <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] text-center mb-2">
+          FAQ
+        </p>
         <h2 className="text-2xl md:text-3xl font-bold text-center text-ink mb-10">
           Pertanyaan yang Sering Diajukan
         </h2>
         <div className="space-y-8">
           {faqGroups.map((group) => (
             <div key={group.label}>
-              <p className="text-[13px] font-semibold text-ink uppercase tracking-[0.02em] mb-3">
+              <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] mb-3">
                 {group.label}
               </p>
               <div className="space-y-3">

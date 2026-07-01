@@ -4,7 +4,6 @@ import HeroIllustration from '../components/illustrations/HeroIllustration'
 import AnimatedCounter from '../components/AnimatedCounter'
 import KenapaTera from '../components/KenapaTera'
 import KriteriaAnak from '../components/KriteriaAnak'
-import AlurSeleksi from '../components/AlurSeleksi'
 import CaraTerlibat from '../components/CaraTerlibat'
 import Faq from '../components/Faq'
 import PerkembanganAnakCard from '../components/PerkembanganAnakCard'
@@ -53,11 +52,12 @@ export default function Beranda() {
 
       <KriteriaAnak />
 
-      <AlurSeleksi />
-
-      <section className="bg-gray-50 border-t border-gray-200 py-16">
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <div className="flex items-center justify-between mb-3">
+          <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] mb-2">
+            Bukti Nyata
+          </p>
+          <div className="flex items-center justify-between mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-ink">
               Perkembangan Anak Binaan
             </h2>
@@ -65,9 +65,6 @@ export default function Beranda() {
               Lihat Semua &rarr;
             </Link>
           </div>
-          <p className="text-ink/60 mb-10">
-            Sebagian kisah nyata anak binaan yang terus bertumbuh lewat pendampingan Tera.
-          </p>
           <div className="grid md:grid-cols-3 gap-6">
             {preview.map((anak) => (
               <PerkembanganAnakCard key={anak.id} anak={anak} />
@@ -91,12 +88,12 @@ export default function Beranda() {
 
       <Testimoni />
 
-      <section className="bg-teal border-t border-white/20 py-16">
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <p className="text-[13px] font-semibold text-white uppercase tracking-[0.02em] text-center mb-2">
+          <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] mb-2">
             Tera dalam Angka
           </p>
-          <h2 className="text-xl md:text-2xl font-bold text-white text-center mb-8">
+          <h2 className="text-xl md:text-2xl font-bold text-ink mb-8">
             Ini yang sudah terjadi, dan insyaallah akan terus bertambah
           </h2>
           <div className="bg-white border border-gray-300 rounded-xl shadow-sm px-6 py-8 md:px-10 md:py-10">

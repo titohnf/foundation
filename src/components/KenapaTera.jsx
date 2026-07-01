@@ -38,10 +38,10 @@ export default function KenapaTera() {
   const looped = [...fasilitas, ...fasilitas]
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 pt-20 pb-16">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         <div className="max-w-2xl mx-auto mb-8 text-center">
-          <p className="text-[13px] font-semibold text-ink uppercase tracking-[0.02em] mb-2">
+          <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] mb-2">
             Tera Foundation &mdash; Wadah Ikhtiar Kami Untuk
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2">
@@ -64,8 +64,14 @@ export default function KenapaTera() {
         </div>
       </div>
 
+      <div className="max-w-6xl mx-auto px-4 md:px-8 mt-16">
+        <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em]">
+          Program Berkelanjutan untuk Anak Sejahtera
+        </p>
+      </div>
+
       <div
-        className="overflow-hidden mt-8"
+        className="overflow-hidden mt-6"
         style={{ maskImage: 'linear-gradient(90deg, transparent, black 8%, black 92%, transparent)' }}
       >
         <div className="flex w-max gap-3.5 animate-marquee">

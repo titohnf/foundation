@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function CaraTerlibat() {
   return (
-    <section className="max-w-6xl mx-auto px-4 md:px-8 py-16">
+    <section className="max-w-6xl mx-auto px-4 md:px-8 py-20">
       <div className="bg-[#E1F5EE] rounded-xl text-center px-6 py-8">
         <h2 className="text-[17px] font-medium text-ink mb-2">
           Banyak cara untuk terlibat
