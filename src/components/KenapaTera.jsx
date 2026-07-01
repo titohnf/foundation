@@ -28,15 +28,18 @@ export default function KenapaTera() {
   return (
     <section className="max-w-6xl mx-auto px-4 md:px-8 py-12">
       <div className="max-w-2xl mb-8">
-        <p className="text-sm font-semibold text-teal-dark mb-2">Tentang Tera Foundation</p>
+        <p className="text-sm font-semibold text-teal-dark mb-2">
+          Tera Foundation &mdash; Wadah Ikhtiar Kami Untuk
+        </p>
         <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2">
-          Diperjuangkan, Bukan Sekadar Dibantu
+          Mengentaskan Kemiskinan Melalui Pendidikan
         </h2>
         <p className="text-ink/60">
-          Yayasan terdaftar resmi yang menjembatani anak kurang mampu dengan pendidikan layak,
-          dikelola dengan proses dan pendampingan yang jelas.{' '}
+          Mulai dari pelatihan hingga pemberdayaan, semua program disusun secara menyeluruh dan
+          berkelanjutan untuk benar-benar bisa menghadirkan pendidikan yang setara untuk anak
+          sejahtera.{' '}
           <Link to="/tentang" className="text-teal-dark font-semibold hover:text-teal">
-            Selengkapnya tentang kami &rarr;
+            Ingin tahu ekosistem lengkap Tera? Kunjungi Tentang Kami &rarr;
           </Link>
         </p>
       </div>

@@ -69,13 +69,13 @@ export default function Beranda() {
           </div>
           <div>
             <IconHeartHandshake size={22} className="text-[#085041] mx-auto mb-1.5" stroke={1.75} />
-            <AnimatedCounter target={35} />
-            <p className="text-sm text-ink/70 mt-1">Anak ikuti sekolah karakter</p>
+            <AnimatedCounter target={6} />
+            <p className="text-sm text-ink/70 mt-1">Program aktif berjalan</p>
           </div>
           <div>
             <IconUsersGroup size={22} className="text-[#085041] mx-auto mb-1.5" stroke={1.75} />
-            <AnimatedCounter target={50} suffix="+" />
-            <p className="text-sm text-ink/70 mt-1">Orang tua hadir BUNDA per sesi</p>
+            <AnimatedCounter target={3} suffix="+" />
+            <p className="text-sm text-ink/70 mt-1">Tahun mendampingi anak</p>
           </div>
         </div>
       </section>

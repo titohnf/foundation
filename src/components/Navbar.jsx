@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 const links = [
   { to: '/', label: 'Beranda' },
-  { to: '/anak', label: 'Perkembangan Anak' },
   { to: '/tentang', label: 'Tentang Kami' },
+  { to: '/anak', label: 'Perkembangan Anak' },
   { to: '/kontribusi', label: 'Berkontribusi' },
   { to: '/lapor', label: 'Lapor Anak' },
 ]
