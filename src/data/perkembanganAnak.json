@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "nama": "Rizki A",
+    "usia": 10,
+    "kelas": "Kelas 4 SD",
+    "deskripsi": "Tinggal bersama neneknya setelah kedua orang tuanya merantau. Rizki bercita-cita menjadi guru matematika suatu hari nanti.",
+    "program": "Bimbel Matematika & Bahasa Indonesia",
+    "lama_bergabung": "6 bulan",
+    "prestasi": "Juara 2 Lomba Cerdas Cermat tingkat kelurahan",
+    "avatar_seed": "Rizki-Ananda"
+  },
+  {
+    "id": 2,
+    "nama": "Siti N",
+    "usia": 12,
+    "kelas": "Kelas 6 SD",
+    "deskripsi": "Anak sulung dari tiga bersaudara; ayahnya bekerja serabutan dan ibunya sedang sakit. Siti bermimpi menjadi dokter untuk bisa mengobati ibunya sendiri.",
+    "program": "Bimbel Persiapan Ujian",
+    "lama_bergabung": "8 bulan",
+    "prestasi": "Nilai ujian sekolah naik dari rata-rata 65 menjadi 85",
+    "avatar_seed": "Siti-Nuraini"
+  },
+  {
+    "id": 3,
+    "nama": "Dimas P",
+    "usia": 14,
+    "kelas": "Kelas 8 SMP",
+    "deskripsi": "Tinggal di kontrakan sempit bersama ibunya yang bekerja sebagai buruh cuci. Dimas ingin menjadi montir agar bisa membuka bengkel sendiri dan membahagiakan ibunya.",
+    "program": "Bimbel IPA & Sekolah Karakter",
+    "lama_bergabung": "10 bulan",
+    "prestasi": "Kehadiran sekolah membaik, aktif ikut Sekolah Karakter",
+    "avatar_seed": "Dimas-Pratama"
+  },
+  {
+    "id": 4,
+    "nama": "Aisyah R",
+    "usia": 9,
+    "kelas": "Kelas 3 SD",
+    "deskripsi": "Kehilangan ayahnya dua tahun lalu; ibunya kini tulang punggung keluarga dengan berjualan sayur keliling. Aisyah ingin menjadi perawat untuk merawat orang-orang di sekitarnya.",
+    "program": "Bimbel Matematika & Sekolah Karakter",
+    "lama_bergabung": "1 tahun 2 bulan",
+    "prestasi": "Konsisten masuk 5 besar di kelas setiap semester",
+    "avatar_seed": "Aisyah-Ramadhani"
+  },
+  {
+    "id": 5,
+    "nama": "Fajar S",
+    "usia": 16,
+    "kelas": "Kelas 10 SMA",
+    "deskripsi": "Keluarganya belum mampu menyisihkan biaya persiapan kuliah. Fajar bercita-cita masuk jurusan teknik dan menjadi insinyur.",
+    "program": "Bimbel Akademik & Persiapan UTBK",
+    "lama_bergabung": "4 bulan",
+    "prestasi": "Aktif mengikuti Kelas Akademik dan UTBK sejak awal bergabung",
+    "avatar_seed": "Fajar-Setiawan"
+  }
+]
