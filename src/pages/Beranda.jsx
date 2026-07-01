@@ -53,27 +53,29 @@ export default function Beranda() {
         <HeroIllustration />
       </section>
 
-      <section className="bg-teal/5 py-14">
-        <div className="max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <KenapaTera />
+
+      <section className="bg-teal/5 py-10">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
-            <IconUserHeart size={26} className="text-[#085041] mx-auto mb-2" stroke={1.75} />
+            <IconUserHeart size={22} className="text-[#085041] mx-auto mb-1.5" stroke={1.75} />
             <AnimatedCounter target={50} suffix="+" />
-            <p className="text-sm text-ink/70 mt-2">Anak dibina</p>
+            <p className="text-sm text-ink/70 mt-1">Anak dibina</p>
           </div>
           <div>
-            <IconMapPin size={26} className="text-[#085041] mx-auto mb-2" stroke={1.75} />
+            <IconMapPin size={22} className="text-[#085041] mx-auto mb-1.5" stroke={1.75} />
             <AnimatedCounter target={5} />
-            <p className="text-sm text-ink/70 mt-2">Kelurahan terjangkau</p>
+            <p className="text-sm text-ink/70 mt-1">Kelurahan terjangkau</p>
           </div>
           <div>
-            <IconHeartHandshake size={26} className="text-[#085041] mx-auto mb-2" stroke={1.75} />
+            <IconHeartHandshake size={22} className="text-[#085041] mx-auto mb-1.5" stroke={1.75} />
             <AnimatedCounter target={35} />
-            <p className="text-sm text-ink/70 mt-2">Anak ikuti sekolah karakter</p>
+            <p className="text-sm text-ink/70 mt-1">Anak ikuti sekolah karakter</p>
           </div>
           <div>
-            <IconUsersGroup size={26} className="text-[#085041] mx-auto mb-2" stroke={1.75} />
+            <IconUsersGroup size={22} className="text-[#085041] mx-auto mb-1.5" stroke={1.75} />
             <AnimatedCounter target={50} suffix="+" />
-            <p className="text-sm text-ink/70 mt-2">Orang tua hadir BUNDA per sesi</p>
+            <p className="text-sm text-ink/70 mt-1">Orang tua hadir BUNDA per sesi</p>
           </div>
         </div>
       </section>
@@ -109,8 +111,6 @@ export default function Beranda() {
       <KriteriaAnak />
 
       <AlurSeleksi />
-
-      <KenapaTera />
 
       <Testimoni />
 
