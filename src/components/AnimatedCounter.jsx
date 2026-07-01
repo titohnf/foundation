@@ -33,7 +33,7 @@ export default function AnimatedCounter({ target, suffix = '', duration = 1500 }
   }, [target, duration])
 
   return (
-    <div ref={ref} className="text-4xl md:text-5xl font-extrabold text-teal">
+    <div ref={ref} className="text-4xl md:text-5xl font-extrabold text-ink">
       {value}
       {suffix}
     </div>

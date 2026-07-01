@@ -25,8 +25,8 @@ export default function Lapor() {
     e.preventDefault()
 
     const message = [
-      'LAPORAN ANAK TERA FOUNDATION',
-      `Pelapor: ${form.namaPelapor}`,
+      'PENDAFTARAN ANAK TERA FOUNDATION',
+      `Pendaftar: ${form.namaPelapor}`,
       `No WA: ${form.noWaPelapor}`,
       '---',
       `Nama Anak: ${form.namaAnak}`,
@@ -44,27 +44,26 @@ export default function Lapor() {
   return (
     <>
       <Seo
-        title="Lapor Anak"
-        description="Laporkan anak di sekitar Anda yang membutuhkan bantuan pendidikan kepada Tera Foundation."
+        title="Daftarkan Anak"
+        description="Daftarkan anak di sekitar Anda yang membutuhkan bantuan pendidikan kepada Tera Foundation."
       />
 
       <section className="max-w-2xl mx-auto px-4 md:px-8 py-12">
-        <h1 className="text-3xl font-extrabold text-ink mb-2 text-center">
-          Laporkan Anak yang Butuh Bantuan
-        </h1>
+        <h1 className="text-3xl font-extrabold text-ink mb-2 text-center">Daftarkan Anak</h1>
         <p className="text-ink/70 text-center mb-10">
-          Bantu kami menjangkau lebih banyak anak dengan melaporkan situasi yang kamu ketahui.
+          Daftarkan anak yang kamu kenal untuk menjadi anak binaan Tera &mdash; baik anakmu
+          sendiri, atau anak di sekitarmu yang memenuhi kriteria berikut.
         </p>
 
         {submitted && (
           <div className="bg-green-50 text-green-700 border border-green-200 rounded-xl p-4 mb-6 text-center font-medium">
-            Terima kasih, laporan kamu akan segera kami tindaklanjuti dalam 1x24 jam.
+            Terima kasih, pendaftaran kamu akan segera kami tindaklanjuti dalam 1x24 jam.
           </div>
         )}
 
         <form onSubmit={handleSubmit} className="space-y-5 bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
-          <Field label="Nama Pelapor" name="namaPelapor" value={form.namaPelapor} onChange={handleChange} required />
-          <Field label="Nomor WA Pelapor" name="noWaPelapor" value={form.noWaPelapor} onChange={handleChange} required />
+          <Field label="Nama Pendaftar" name="namaPelapor" value={form.namaPelapor} onChange={handleChange} required />
+          <Field label="Nomor WA Pendaftar" name="noWaPelapor" value={form.noWaPelapor} onChange={handleChange} required />
           <Field label="Nama atau Inisial Anak" name="namaAnak" value={form.namaAnak} onChange={handleChange} required />
           <Field label="Usia Anak" name="usiaAnak" type="number" value={form.usiaAnak} onChange={handleChange} required />
           <Field label="Lokasi (Kelurahan, Kecamatan, Kota)" name="lokasi" value={form.lokasi} onChange={handleChange} required />
@@ -73,9 +72,9 @@ export default function Lapor() {
 
           <button
             type="submit"
-            className="w-full bg-teal hover:bg-teal-dark text-white font-semibold py-3 rounded-xl transition-colors"
+            className="w-full bg-blue hover:bg-blue-dark text-white font-semibold py-3 rounded-xl transition-colors"
           >
-            Kirim Laporan via WhatsApp
+            Kirim Pendaftaran via WhatsApp
           </button>
         </form>
       </section>

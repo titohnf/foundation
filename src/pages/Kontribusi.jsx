@@ -25,7 +25,7 @@ export default function Kontribusi() {
     <>
       <Seo
         title="Berkontribusi"
-        description="Pilih jalur kontribusimu untuk membantu Tera Foundation: donatur, pengajar, pembicara, atau pelapor."
+        description="Pilih jalur kontribusimu untuk membantu Tera Foundation: donatur, pengajar, pembicara, atau daftarkan anak."
       />
 
       <section className="max-w-6xl mx-auto px-4 md:px-8 py-12">
@@ -45,7 +45,7 @@ export default function Kontribusi() {
                 href={waLink(k.message)}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-teal hover:bg-teal-dark text-white font-semibold text-center py-3 rounded-xl transition-colors"
+                className="bg-blue hover:bg-blue-dark text-white font-semibold text-center py-3 rounded-xl transition-colors"
               >
                 Hubungi via WhatsApp
               </a>
@@ -53,15 +53,16 @@ export default function Kontribusi() {
           ))}
 
           <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm flex flex-col">
-            <h2 className="text-xl font-bold text-teal-dark mb-3">Pelapor</h2>
+            <h2 className="text-xl font-bold text-teal-dark mb-3">Daftarkan Anak</h2>
             <p className="text-ink/70 mb-6 flex-1">
-              Ketahui ada anak di sekitarmu yang membutuhkan bantuan? Laporkan kepada kami.
+              Ketahui ada anak di sekitarmu yang memenuhi kriteria anak binaan Tera? Daftarkan
+              kepada kami.
             </p>
             <Link
               to="/lapor"
-              className="bg-teal hover:bg-teal-dark text-white font-semibold text-center py-3 rounded-xl transition-colors"
+              className="bg-blue hover:bg-blue-dark text-white font-semibold text-center py-3 rounded-xl transition-colors"
             >
-              Laporkan Anak
+              Daftarkan Anak
             </Link>
           </div>
         </div>

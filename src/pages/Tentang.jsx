@@ -67,7 +67,7 @@ export default function Tentang() {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {prinsip.map((p) => (
-            <div key={p.title} className="text-center p-6 rounded-2xl border border-gray-100">
+            <div key={p.title} className="text-center p-6 rounded-2xl border border-gray-100 bg-white shadow-sm">
               <div className="flex justify-center mb-4">
                 <p.icon />
               </div>
@@ -101,7 +101,7 @@ export default function Tentang() {
         <h2 className="text-2xl md:text-3xl font-bold text-center text-ink mb-10">Program Kami</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {program.map((p) => (
-            <div key={p.title} className="border border-gray-100 rounded-2xl p-6">
+            <div key={p.title} className="border border-gray-100 rounded-2xl bg-white shadow-sm p-6">
               <h3 className="font-bold text-ink mb-2">{p.title}</h3>
               <p className="text-sm text-ink/70">{p.desc}</p>
             </div>

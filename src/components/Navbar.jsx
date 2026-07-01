@@ -6,7 +6,7 @@ const links = [
   { to: '/tentang', label: 'Tentang Kami' },
   { to: '/anak', label: 'Perkembangan Anak' },
   { to: '/kontribusi', label: 'Berkontribusi' },
-  { to: '/lapor', label: 'Lapor Anak' },
+  { to: '/lapor', label: 'Daftarkan Anak' },
 ]
 
 export default function Navbar() {
@@ -26,7 +26,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-8 py-4">
-        <NavLink to="/" className="text-xl font-extrabold text-teal">
+        <NavLink to="/" className="flex items-center gap-2 text-xl font-extrabold text-ink">
+          <img src="/logo.png" alt="Logo Tera Foundation" className="w-6 h-6" />
           Tera Foundation
         </NavLink>
 
@@ -37,7 +38,7 @@ export default function Navbar() {
               to={l.to}
               className={({ isActive }) =>
                 `text-sm font-medium transition-colors ${
-                  isActive ? 'text-teal-dark' : 'text-ink/80 hover:text-teal'
+                  isActive ? 'text-blue' : 'text-ink/80 hover:text-blue'
                 }`
               }
             >
@@ -66,7 +67,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
                 `text-sm font-medium py-2 border-b border-gray-100 ${
-                  isActive ? 'text-teal-dark' : 'text-ink/80'
+                  isActive ? 'text-blue' : 'text-ink/80'
                 }`
               }
             >

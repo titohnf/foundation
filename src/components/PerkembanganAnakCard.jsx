@@ -1,12 +1,10 @@
-import { IconBook2, IconClock, IconTrophy } from '@tabler/icons-react'
-
 export default function PerkembanganAnakCard({ anak }) {
   const avatarUrl = `https://api.dicebear.com/9.x/lorelei/svg?seed=${encodeURIComponent(
     anak.avatar_seed
   )}`
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col">
+    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
       <div className="flex items-center gap-4 mb-4">
         <img
           src={avatarUrl}
@@ -25,15 +23,15 @@ export default function PerkembanganAnakCard({ anak }) {
 
       <div className="space-y-2.5 text-sm text-ink/80">
         <div className="flex items-start gap-2">
-          <IconBook2 size={18} className="text-[#085041] mt-0.5 shrink-0" stroke={2} />
+          <span className="shrink-0">📚</span>
           <span>{anak.program}</span>
         </div>
         <div className="flex items-start gap-2">
-          <IconClock size={18} className="text-[#085041] mt-0.5 shrink-0" stroke={2} />
+          <span className="shrink-0">⏳</span>
           <span>Bergabung selama {anak.lama_bergabung}</span>
         </div>
         <div className="flex items-start gap-2">
-          <IconTrophy size={18} className="text-[#085041] mt-0.5 shrink-0" stroke={2} />
+          <span className="shrink-0">🏆</span>
           <span>{anak.prestasi}</span>
         </div>
       </div>

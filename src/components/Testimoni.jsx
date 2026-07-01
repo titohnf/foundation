@@ -1,14 +1,15 @@
-import { IconQuote } from '@tabler/icons-react'
-
 export default function Testimoni() {
   const avatarUrl = `https://api.dicebear.com/9.x/lorelei/svg?seed=${encodeURIComponent(
     'Ibu-Siti-Nuraini'
   )}`
 
   return (
-    <section className="bg-[#085041] py-16">
+    <section className="bg-teal-dark py-16">
       <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
-        <IconQuote size={36} className="text-teal mx-auto mb-4" stroke={1.5} />
+        <p className="text-[13px] font-semibold text-white/80 uppercase tracking-[0.02em] mb-6">
+          Cerita dari Orang Tua Kami
+        </p>
+        <span className="text-3xl block mb-4">💬</span>
         <p className="text-white text-lg md:text-xl leading-relaxed font-medium mb-6">
           Sejak ikut bimbel Tera, anak saya jadi lebih percaya diri dan semangat belajar. Sesi
           BUNDA juga membantu saya paham cara mendampingi anak di rumah.

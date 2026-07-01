@@ -1,62 +1,86 @@
-import { Link } from 'react-router-dom'
-import { IconUserCheck, IconSchool, IconUsersGroup, IconRoute } from '@tabler/icons-react'
+const fasilitas = [
+  { emoji: '📚', label: 'Bimbingan Belajar Gratis' },
+  { emoji: '✨', label: 'Sekolah Karakter' },
+  { emoji: '🤝', label: 'Kakak Asuh' },
+  { emoji: '👨‍👩‍👧', label: 'Sesi BUNDA untuk Orang Tua' },
+  { emoji: '🎓', label: 'Kelas Akademik & UTBK' },
+  { emoji: '🚌', label: 'Field Trip Edukatif' },
+]
 
 const alasan = [
   {
-    icon: IconUserCheck,
-    title: 'Anak-anak diseleksi',
-    desc: 'Setiap anak yang dibantu melalui proses seleksi agar bantuan tepat sasaran.',
+    image:
+      'https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/49b6f4-target/dynamic/400/color.webp',
+    title: 'Program dikelola secara profesional',
+    desc: 'Setiap program dijalankan dengan kurikulum dan pendamping yang terstruktur.',
   },
   {
-    icon: IconSchool,
-    title: 'Bimbel dikelola secara profesional',
-    desc: 'Program belajar dijalankan dengan kurikulum dan pengajar yang terstruktur.',
-  },
-  {
-    icon: IconUsersGroup,
+    image:
+      'https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/4e7918-thumb-up/dynamic/400/color.webp',
     title: 'Penguatan peran orang tua',
     desc: 'Orang tua dilibatkan aktif lewat sesi BUNDA untuk mendukung tumbuh kembang anak.',
   },
   {
-    icon: IconRoute,
+    image:
+      'https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/b91186-shield/dynamic/400/color.webp',
     title: 'Pendampingan end to end',
     desc: 'Tim Tera mendampingi anak dari awal hingga perkembangannya dipantau berkelanjutan.',
+  },
+  {
+    image:
+      'https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/176980-folder/dynamic/400/color.webp',
+    title: 'Berbadan Hukum Resmi',
+    desc: 'Lembaga terdaftar secara legal, dengan laporan keuangan yang jelas.',
   },
 ]
 
 export default function KenapaTera() {
+  const looped = [...fasilitas, ...fasilitas]
+
   return (
-    <section className="max-w-6xl mx-auto px-4 md:px-8 py-12">
-      <div className="max-w-2xl mb-8">
-        <p className="text-sm font-semibold text-teal-dark mb-2">
-          Tera Foundation &mdash; Wadah Ikhtiar Kami Untuk
-        </p>
-        <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2">
-          Mengentaskan Kemiskinan Melalui Pendidikan
-        </h2>
-        <p className="text-ink/60">
-          Mulai dari pelatihan hingga pemberdayaan, semua program disusun secara menyeluruh dan
-          berkelanjutan untuk benar-benar bisa menghadirkan pendidikan yang setara untuk anak
-          sejahtera.{' '}
-          <Link to="/tentang" className="text-teal-dark font-semibold hover:text-teal">
-            Ingin tahu ekosistem lengkap Tera? Kunjungi Tentang Kami &rarr;
-          </Link>
-        </p>
-      </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-        {alasan.map((a) => (
-          <div
-            key={a.title}
-            className="bg-white border border-gray-100 rounded-xl p-4 text-center"
-          >
-            <div className="w-10 h-10 rounded-full bg-[#E1F5EE] text-[#085041] flex items-center justify-center mx-auto mb-2.5">
-              <a.icon size={20} stroke={2} />
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-6xl mx-auto px-4 md:px-8">
+        <div className="max-w-2xl mx-auto mb-8 text-center">
+          <p className="text-[13px] font-semibold text-ink uppercase tracking-[0.02em] mb-2">
+            Tera Foundation &mdash; Wadah Ikhtiar Kami Untuk
+          </p>
+          <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2">
+            Mengentaskan Kemiskinan Melalui Pendidikan
+          </h2>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4 items-start">
+          {alasan.map((a) => (
+            <div
+              key={a.title}
+              className="bg-white border border-gray-100 rounded-xl shadow-sm p-6 flex items-center gap-4"
+            >
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-ink mb-2">{a.title}</h3>
+                <p className="text-sm text-ink/60">{a.desc}</p>
+              </div>
+              <img src={a.image} alt="" className="w-20 h-20 object-contain shrink-0" />
             </div>
-            <h3 className="text-[15px] font-medium text-ink mb-1">{a.title}</h3>
-            <p className="text-sm text-ink/60">{a.desc}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
+      <div
+        className="overflow-hidden mt-8"
+        style={{ maskImage: 'linear-gradient(90deg, transparent, black 8%, black 92%, transparent)' }}
+      >
+        <div className="flex w-max gap-3.5 animate-marquee">
+          {looped.map((f, i) => (
+            <div
+              key={`${f.label}-${i}`}
+              className="flex items-center gap-3 w-72 shrink-0 bg-white border border-gray-100 rounded-xl shadow-sm p-4"
+            >
+              <span className="text-xl shrink-0">{f.emoji}</span>
+              <span className="text-sm font-medium text-ink">{f.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </section>
   )
 }

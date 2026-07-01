@@ -24,7 +24,7 @@ export default function Footer() {
             href={waLink('Halo Tera Foundation, saya ingin bertanya lebih lanjut.')}
             target="_blank"
             rel="noreferrer"
-            className="text-sm text-teal hover:text-teal-dark"
+            className="text-sm text-blue hover:text-blue-dark"
           >
             +62 853-6100-5445 (WhatsApp)
           </a>
