@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
-import HeroIllustration from '../components/illustrations/HeroIllustration'
+import PolaroidHero from '../components/PolaroidHero'
 import AnimatedCounter from '../components/AnimatedCounter'
 import KenapaTera from '../components/KenapaTera'
 import KriteriaAnak from '../components/KriteriaAnak'
@@ -9,10 +9,16 @@ import Faq from '../components/Faq'
 import PerkembanganAnakCard from '../components/PerkembanganAnakCard'
 import Testimoni from '../components/Testimoni'
 import { waLink } from '../lib/whatsapp'
+import { getAvatarUrl } from '../lib/avatar'
 import perkembanganAnakData from '../data/perkembanganAnak.json'
 
 export default function Beranda() {
   const preview = perkembanganAnakData.slice(0, 3)
+  const heroPhotos = perkembanganAnakData.map((anak) => ({
+    src: getAvatarUrl(anak),
+    nama: anak.nama,
+    citaCita: anak.cita_cita,
+  }))
 
   return (
     <>
@@ -52,7 +58,7 @@ export default function Beranda() {
             </p>
           </div>
         </div>
-        <HeroIllustration />
+        <PolaroidHero photos={heroPhotos} />
       </section>
 
       <KenapaTera />

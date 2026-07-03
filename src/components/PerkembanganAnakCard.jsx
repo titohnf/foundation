@@ -1,7 +1,7 @@
+import { getAvatarUrl } from '../lib/avatar'
+
 export default function PerkembanganAnakCard({ anak }) {
-  const avatarUrl = `https://api.dicebear.com/9.x/lorelei/svg?seed=${encodeURIComponent(
-    anak.avatar_seed
-  )}`
+  const avatarUrl = getAvatarUrl(anak)
 
   return (
     <div className="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col">

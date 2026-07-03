@@ -8,7 +8,9 @@
     "program": "Bimbel Matematika & Bahasa Indonesia",
     "lama_bergabung": "6 bulan",
     "prestasi": "Juara 2 Lomba Cerdas Cermat tingkat kelurahan",
-    "avatar_seed": "Rizki-Ananda"
+    "avatar_seed": "Rizki-Ananda",
+    "gender": "laki-laki",
+    "cita_cita": "Guru Matematika"
   },
   {
     "id": 2,
@@ -19,7 +21,10 @@
     "program": "Bimbel Persiapan Ujian",
     "lama_bergabung": "8 bulan",
     "prestasi": "Nilai ujian sekolah naik dari rata-rata 65 menjadi 85",
-    "avatar_seed": "Siti-Nuraini"
+    "avatar_seed": "Siti-Nuraini-2026",
+    "gender": "perempuan",
+    "hijab": true,
+    "cita_cita": "Dokter"
   },
   {
     "id": 3,
@@ -30,7 +35,9 @@
     "program": "Bimbel IPA & Sekolah Karakter",
     "lama_bergabung": "10 bulan",
     "prestasi": "Kehadiran sekolah membaik, aktif ikut Sekolah Karakter",
-    "avatar_seed": "Dimas-Pratama"
+    "avatar_seed": "Dimas-Pratama",
+    "gender": "laki-laki",
+    "cita_cita": "Montir"
   },
   {
     "id": 4,
@@ -41,7 +48,10 @@
     "program": "Bimbel Matematika & Sekolah Karakter",
     "lama_bergabung": "1 tahun 2 bulan",
     "prestasi": "Konsisten masuk 5 besar di kelas setiap semester",
-    "avatar_seed": "Aisyah-Ramadhani"
+    "avatar_seed": "Aisyah-Ramadhani",
+    "gender": "perempuan",
+    "hijab": true,
+    "cita_cita": "Perawat"
   },
   {
     "id": 5,
@@ -52,6 +62,8 @@
     "program": "Bimbel Akademik & Persiapan UTBK",
     "lama_bergabung": "4 bulan",
     "prestasi": "Aktif mengikuti Kelas Akademik dan UTBK sejak awal bergabung",
-    "avatar_seed": "Fajar-Setiawan"
+    "avatar_seed": "Fajar-Setiawan",
+    "gender": "laki-laki",
+    "cita_cita": "Insinyur"
   }
 ]
