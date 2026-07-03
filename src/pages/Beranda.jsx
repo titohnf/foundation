@@ -23,8 +23,15 @@ export default function Beranda() {
 
       <section className="max-w-6xl mx-auto px-4 md:px-8 pt-12 pb-16 grid md:grid-cols-[3fr_2fr] gap-6 md:gap-10 items-center">
         <div className="text-center md:text-left">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-ink leading-tight mb-4">
-            Bebaskan anak untuk berani bermimpi
+          <h1 className="text-3xl md:text-5xl font-bold text-ink leading-tight mb-4">
+            Bebaskan anak untuk berani{' '}
+            <span className="brush-highlight">
+              <svg viewBox="0 0 220 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2,42 C40,24 90,10 150,5 C185,2.5 208,5 216,11 C221,16 221,20 216,25 C208,31 185,33.5 150,31 C90,26 40,35 2,44 Z" />
+              </svg>
+              <span className="relative">bermimpi</span>
+            </span>{' '}
+            <span className="inline-block animate-pop-in text-4xl align-middle">✨</span>
           </h1>
           <p className="text-ink/70 mb-8">
             Melalui pendidikan yang menyeluruh dan berkelanjutan, kita bantu anak kurang mampu
@@ -37,7 +44,7 @@ export default function Beranda() {
             >
               Pelajari Cara Membantu
             </Link>
-            <p className="mt-3 text-[13px] text-ink/60">
+            <p className="mt-3 text-sm text-ink/60">
               Ingin mendaftarkan anak?{' '}
               <a href="#kriteria" className="text-blue underline">
                 Cek kriteria &rarr;
@@ -54,7 +61,7 @@ export default function Beranda() {
 
       <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] mb-2">
+          <p className="text-sm font-semibold text-teal-dark uppercase tracking-[0.02em] mb-2">
             Bukti Nyata
           </p>
           <div className="flex items-center justify-between mb-10">
@@ -70,15 +77,20 @@ export default function Beranda() {
               <PerkembanganAnakCard key={anak.id} anak={anak} />
             ))}
           </div>
-          <div className="text-center py-6">
-            <p className="text-[15px] text-ink/70 mb-4">
-              Masih banyak anak lain yang menunggu kesempatan yang sama.
-            </p>
+          <div className="bg-[#E1F5EE] rounded-xl px-6 py-8 mt-10 flex flex-col md:flex-row items-center md:justify-between gap-6 text-center md:text-left">
+            <div>
+              <h3 className="text-lg md:text-xl font-bold text-ink mb-2">
+                Masih banyak anak lain yang menunggu kesempatan yang sama
+              </h3>
+              <p className="text-sm text-ink leading-[1.6]">
+                Bantuan Anda bisa membuka jalan pendidikan bagi anak-anak binaan berikutnya.
+              </p>
+            </div>
             <a
               href={waLink('Halo Tera Foundation, saya ingin berdonasi untuk Tera Foundation.')}
               target="_blank"
               rel="noreferrer"
-              className="inline-block bg-blue hover:bg-blue-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+              className="inline-block shrink-0 bg-blue hover:bg-blue-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors"
             >
               Bantu lewat donasi
             </a>
@@ -90,7 +102,7 @@ export default function Beranda() {
 
       <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] mb-2">
+          <p className="text-sm font-semibold text-teal-dark uppercase tracking-[0.02em] mb-2">
             Tera dalam Angka
           </p>
           <h2 className="text-xl md:text-2xl font-bold text-ink mb-8">

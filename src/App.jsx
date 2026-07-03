@@ -12,7 +12,8 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <AnnouncementBanner />
+      {/* Sembunyikan sementara, aktifkan lagi saat pendaftaran batch 2 dibuka */}
+      {false && <AnnouncementBanner />}
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Beranda />} />

@@ -38,7 +38,7 @@ export default function Testimoni() {
   return (
     <section className="bg-white border-t border-gray-200 py-20">
       <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
-        <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] mb-6">
+        <p className="text-sm font-semibold text-teal-dark uppercase tracking-[0.02em] mb-6">
           Cerita dari Orang Tua Kami
         </p>
         <div className="flex items-center justify-center min-h-[140px] md:min-h-[112px] mb-6">
@@ -50,7 +50,7 @@ export default function Testimoni() {
           <img src={avatarUrl} alt="Avatar orang tua" className="w-10 h-10 rounded-full bg-teal/10" />
           <div className="text-left">
             <p className="text-ink font-semibold text-sm">{current.name}</p>
-            <p className="text-ink/60 text-xs">{current.role}</p>
+            <p className="text-ink/60 text-sm">{current.role}</p>
           </div>
         </div>
         <div className="flex items-center justify-center gap-4">

@@ -42,7 +42,7 @@ export default function Faq() {
   return (
     <section className="border-t border-gray-200 py-20">
       <div className="max-w-3xl mx-auto px-4 md:px-8">
-        <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] text-center mb-2">
+        <p className="text-sm font-semibold text-teal-dark uppercase tracking-[0.02em] text-center mb-2">
           FAQ
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-center text-ink mb-10">
@@ -51,7 +51,7 @@ export default function Faq() {
         <div className="space-y-8">
           {faqGroups.map((group) => (
             <div key={group.label}>
-              <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] mb-3">
+              <p className="text-sm font-semibold text-teal-dark uppercase tracking-[0.02em] mb-3">
                 {group.label}
               </p>
               <div className="space-y-3">
