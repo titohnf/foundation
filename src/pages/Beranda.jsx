@@ -96,7 +96,7 @@ export default function Beranda() {
           <h2 className="text-xl md:text-2xl font-bold text-ink mb-8">
             Ini yang sudah terjadi, dan insyaallah akan terus bertambah
           </h2>
-          <div className="bg-white border border-gray-300 rounded-xl shadow-sm px-6 py-8 md:px-10 md:py-10">
+          <div className="bg-white border border-gray-300 rounded-xl px-6 py-8 md:px-10 md:py-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="md:border-l md:border-gray-200 md:first:border-l-0">
                 <AnimatedCounter target={50} suffix="+" />

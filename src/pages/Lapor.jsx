@@ -61,7 +61,7 @@ export default function Lapor() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-5 bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
+        <form onSubmit={handleSubmit} className="space-y-5 bg-white border border-gray-200 rounded-2xl p-8">
           <Field label="Nama Pendaftar" name="namaPelapor" value={form.namaPelapor} onChange={handleChange} required />
           <Field label="Nomor WA Pendaftar" name="noWaPelapor" value={form.noWaPelapor} onChange={handleChange} required />
           <Field label="Nama atau Inisial Anak" name="namaAnak" value={form.namaAnak} onChange={handleChange} required />

@@ -4,7 +4,7 @@ export default function PerkembanganAnakCard({ anak }) {
   )}`
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
+    <div className="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col">
       <div className="flex items-center gap-4 mb-4">
         <img
           src={avatarUrl}

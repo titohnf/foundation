@@ -9,26 +9,22 @@ const fasilitas = [
 
 const alasan = [
   {
-    image:
-      'https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/49b6f4-target/dynamic/400/color.webp',
+    image: '/icons/profesional.png',
     title: 'Program dikelola secara profesional',
     desc: 'Setiap program dijalankan dengan kurikulum dan pendamping yang terstruktur.',
   },
   {
-    image:
-      'https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/4e7918-thumb-up/dynamic/400/color.webp',
+    image: '/icons/orang-tua.png',
     title: 'Penguatan peran orang tua',
     desc: 'Orang tua dilibatkan aktif lewat sesi BUNDA untuk mendukung tumbuh kembang anak.',
   },
   {
-    image:
-      'https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/b91186-shield/dynamic/400/color.webp',
+    image: '/icons/end2end.png',
     title: 'Pendampingan end to end',
     desc: 'Tim Tera mendampingi anak dari awal hingga perkembangannya dipantau berkelanjutan.',
   },
   {
-    image:
-      'https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/176980-folder/dynamic/400/color.webp',
+    image: '/icons/badan-hukum.png',
     title: 'Berbadan Hukum Resmi',
     desc: 'Lembaga terdaftar secara legal, dengan laporan keuangan yang jelas.',
   },
@@ -48,19 +44,29 @@ export default function KenapaTera() {
             Mengentaskan Kemiskinan Melalui Pendidikan
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 gap-4 items-start">
-          {alasan.map((a) => (
-            <div
-              key={a.title}
-              className="bg-white border border-gray-100 rounded-xl shadow-sm p-6 flex items-center gap-4"
-            >
-              <div className="flex-1">
-                <h3 className="text-lg font-bold text-ink mb-2">{a.title}</h3>
-                <p className="text-sm text-ink/60">{a.desc}</p>
+        <div className="grid sm:grid-cols-2 border border-gray-200 rounded-xl overflow-hidden bg-white">
+          {alasan.map((a, i) => {
+            const col = i % 2
+            const isLastRow = i >= alasan.length - 2
+            const classes = [
+              'p-6 flex items-center gap-4 border-gray-200',
+              i !== alasan.length - 1 ? 'border-b' : '',
+              col === 0 ? 'sm:border-r' : '',
+              isLastRow ? 'sm:border-b-0' : 'sm:border-b',
+            ]
+              .filter(Boolean)
+              .join(' ')
+
+            return (
+              <div key={a.title} className={classes}>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-ink mb-2">{a.title}</h3>
+                  <p className="text-sm text-ink/60">{a.desc}</p>
+                </div>
+                <img src={a.image} alt="" className="w-14 h-14 object-contain shrink-0" />
               </div>
-              <img src={a.image} alt="" className="w-20 h-20 object-contain shrink-0" />
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
 
@@ -78,7 +84,7 @@ export default function KenapaTera() {
           {looped.map((f, i) => (
             <div
               key={`${f.label}-${i}`}
-              className="flex items-center gap-3 w-72 shrink-0 bg-white border border-gray-100 rounded-xl shadow-sm p-4"
+              className="flex items-center gap-3 w-72 shrink-0 bg-white border border-gray-200 rounded-xl p-4"
             >
               <span className="text-xl shrink-0">{f.emoji}</span>
               <span className="text-sm font-medium text-ink">{f.label}</span>

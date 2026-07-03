@@ -38,7 +38,7 @@ export default function Kontribusi() {
 
         <div className="grid sm:grid-cols-2 gap-6">
           {kartu.map((k) => (
-            <div key={k.title} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm flex flex-col">
+            <div key={k.title} className="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col">
               <h2 className="text-xl font-bold text-teal-dark mb-3">{k.title}</h2>
               <p className="text-ink/70 mb-6 flex-1">{k.desc}</p>
               <a
@@ -52,7 +52,7 @@ export default function Kontribusi() {
             </div>
           ))}
 
-          <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm flex flex-col">
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col">
             <h2 className="text-xl font-bold text-teal-dark mb-3">Daftarkan Anak</h2>
             <p className="text-ink/70 mb-6 flex-1">
               Ketahui ada anak di sekitarmu yang memenuhi kriteria anak binaan Tera? Daftarkan

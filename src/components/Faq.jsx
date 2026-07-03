@@ -40,7 +40,7 @@ export default function Faq() {
   const toggle = (key) => setOpenKey((prev) => (prev === key ? null : key))
 
   return (
-    <section className="border-t border-gray-100 py-20">
+    <section className="border-t border-gray-200 py-20">
       <div className="max-w-3xl mx-auto px-4 md:px-8">
         <p className="text-[13px] font-semibold text-teal-dark uppercase tracking-[0.02em] text-center mb-2">
           FAQ
@@ -61,7 +61,7 @@ export default function Faq() {
                   return (
                     <div
                       key={key}
-                      className="bg-white border border-gray-100 rounded-xl shadow-sm overflow-hidden"
+                      className="bg-white border border-gray-200 rounded-xl overflow-hidden"
                     >
                       <button
                         type="button"
