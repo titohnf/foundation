@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600;700;800&display=swap');
 @import "tailwindcss";
 
+/* DESIGN-TOKENS-START */
 @theme {
   --font-sans: "Inter", system-ui, sans-serif;
   --font-heading: "Nunito", system-ui, sans-serif;
@@ -11,6 +12,7 @@
   --color-blue: #026BF5;
   --color-blue-dark: #0157C4;
 }
+/* DESIGN-TOKENS-END */
 
 html {
   scroll-behavior: smooth;
