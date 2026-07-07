@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600;700;800&display=swap');
 @import "tailwindcss";
 
-/* DESIGN-TOKENS-START */
---color-primary:            #0d6efd;
---color-primary-dark:       #0b57d0;
---color-primary-foreground: #ffffff;
-/* DESIGN-TOKENS-END */
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Nunito", system-ui, sans-serif;
+  --color-teal: #3DBFB0;
+  --color-teal-dark: #2A9E95;
+  --color-ink: #1F2937;
+  --color-cream: #F5F3EF;
+  --color-blue: #026BF5;
+  --color-blue-dark: #0157C4;
+
+  /* DESIGN-TOKENS-START */
+  --color-primary: #0d6efd;
+  --color-primary-dark: #0b57d0;
+  --color-primary-foreground: #ffffff;
+  /* DESIGN-TOKENS-END */
 }
 
 html {
