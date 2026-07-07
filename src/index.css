@@ -11,8 +11,12 @@
   --color-cream: #F5F3EF;
   --color-blue: #026BF5;
   --color-blue-dark: #0157C4;
+  /* DESIGN-TOKENS-START */
+  --color-primary: #0d6efd;
+  --color-primary-dark: #0b57d0;
+  --color-primary-foreground: #ffffff;
+  /* DESIGN-TOKENS-END */
 }
-/* DESIGN-TOKENS-END */
 
 html {
   scroll-behavior: smooth;

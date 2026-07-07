@@ -72,7 +72,7 @@ export default function Lapor() {
 
           <button
             type="submit"
-            className="w-full bg-blue hover:bg-blue-dark text-white font-semibold py-3 rounded-xl transition-colors"
+            className="w-full bg-primary hover:bg-primary-dark text-primary-foreground font-semibold py-3 rounded-xl transition-colors"
           >
             Kirim Pendaftaran via WhatsApp
           </button>
