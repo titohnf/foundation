@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600;700;800&display=swap');
 @import "tailwindcss";
 
-@theme {
+@theme inline {
   --font-sans: "Inter", system-ui, sans-serif;
   --font-heading: "Nunito", system-ui, sans-serif;
   --color-teal: #3DBFB0;
@@ -11,12 +11,12 @@
   --color-blue: #026BF5;
   --color-blue-dark: #0157C4;
 
-  /* DESIGN-TOKENS-START */
---color-primary:            #0d6efd;
---color-primary-dark:       #0b57d0;
---color-primary-foreground: #ffffff;
---radius-button:            4px;
-/* DESIGN-TOKENS-END */
+  /* Sourced live from the design-system CDN tokens.css <link> in index.html
+     — no local copy to keep in sync. */
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-foreground: var(--primary-foreground);
+  --radius-button: var(--radius-button);
 }
 
 html {
