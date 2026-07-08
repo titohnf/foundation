@@ -8,6 +8,12 @@
     <meta name="description" content="Tera Foundation menjembatani donatur dengan anak-anak yang membutuhkan bantuan pendidikan." />
     <meta property="og:title" content="Tera Foundation" />
     <meta property="og:description" content="Setiap anak berhak atas masa depan yang lebih baik." />
+    <!-- Pinned to a commit SHA (not @main) so every visitor/browser/CDN edge
+         always gets the exact same file — @main is mutable and jsDelivr
+         caches it for up to 7 days per-edge. Bump the SHA deliberately
+         after each design-system change. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/titohnf/design-system@d269a1c1d68f9d9ced43ef5fc74b17d8369e7c8f/tokens.css">
+    <script src="https://cdn.jsdelivr.net/gh/titohnf/design-system@d269a1c1d68f9d9ced43ef5fc74b17d8369e7c8f/tera-header.js" defer></script>
   </head>
   <body>
     <div id="root"></div>
