@@ -46,7 +46,7 @@ export default function Beranda() {
           <div className="flex flex-col items-center md:items-start">
             <Link
               to="/kontribusi"
-              className="inline-block bg-primary hover:bg-primary-dark text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-colors"
+              className="inline-block bg-primary hover:bg-primary-dark text-primary-foreground font-semibold px-6 py-3 rounded-button transition-colors"
             >
               Pelajari Cara Membantu
             </Link>
@@ -96,7 +96,7 @@ export default function Beranda() {
               href={waLink('Halo Tera Foundation, saya ingin berdonasi untuk Tera Foundation.')}
               target="_blank"
               rel="noreferrer"
-              className="inline-block shrink-0 bg-primary hover:bg-primary-dark text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-colors"
+              className="inline-block shrink-0 bg-primary hover:bg-primary-dark text-primary-foreground font-semibold px-6 py-3 rounded-button transition-colors"
             >
               Bantu lewat donasi
             </a>

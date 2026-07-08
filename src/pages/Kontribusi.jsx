@@ -45,7 +45,7 @@ export default function Kontribusi() {
                 href={waLink(k.message)}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold text-center py-3 rounded-xl transition-colors"
+                className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold text-center py-3 rounded-button transition-colors"
               >
                 Hubungi via WhatsApp
               </a>
@@ -60,7 +60,7 @@ export default function Kontribusi() {
             </p>
             <Link
               to="/lapor"
-              className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold text-center py-3 rounded-xl transition-colors"
+              className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold text-center py-3 rounded-button transition-colors"
             >
               Daftarkan Anak
             </Link>
