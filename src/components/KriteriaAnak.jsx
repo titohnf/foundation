@@ -23,11 +23,10 @@ const alur = [
     title: 'Seleksi Administrasi',
   },
   {
-    title: 'Seleksi Sikap dan Nilai (Anak dan Orang Tua)',
-    sub: ['Sekolah Karakter 2 bulan', 'Mentoring', 'Seleksi orang tua'],
+    title: 'Pembentukan Karakter',
   },
   {
-    title: 'Trial Class 3 Bulan',
+    title: 'Penguatan Karakter dan Bimbel Akademik',
   },
   {
     title: 'Evaluasi',
@@ -76,14 +75,7 @@ export default function KriteriaAnak() {
                   {idx + 1}
                 </div>
                 <div className="md:text-center">
-                  <h3 className="text-[15px] font-medium text-ink mb-2">{a.title}</h3>
-                  {a.sub && (
-                    <ul className="text-sm text-ink/60 space-y-1 md:inline-block md:text-left">
-                      {a.sub.map((s) => (
-                        <li key={s}>&middot; {s}</li>
-                      ))}
-                    </ul>
-                  )}
+                  <h3 className="text-[15px] font-medium text-ink">{a.title}</h3>
                 </div>
               </div>
             ))}

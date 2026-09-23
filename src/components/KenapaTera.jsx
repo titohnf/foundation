@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IconArrowRight } from '@tabler/icons-react'
 import { program } from '../data/program'
@@ -70,29 +71,53 @@ export default function KenapaTera() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3.5 mt-6">
           {program.map((f) => (
-            <div
-              key={f.slug}
-              className="flex flex-col bg-white border border-gray-200 rounded-xl p-5"
-            >
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 rounded-full bg-teal/10 text-teal-dark flex items-center justify-center shrink-0">
-                  <f.icon size={20} stroke={2} />
-                </div>
-                <h3 className="font-bold text-ink">{f.label}</h3>
-              </div>
-              <p className="flex-1 text-sm text-ink/60 mb-4">{f.desc}</p>
-              <Link
-                to={`/program/${f.slug}`}
-                className="group self-start inline-flex items-center gap-1 text-sm font-semibold text-teal-dark hover:text-teal transition-colors"
-              >
-                Pelajari Selengkapnya
-                <IconArrowRight size={16} stroke={2} className="transition-transform group-hover:translate-x-0.5" />
-              </Link>
-            </div>
+            <ProgramCard key={f.slug} program={f} />
           ))}
         </div>
       </div>
 
     </section>
+  )
+}
+
+// Foto program. Selama file fotonya belum tersedia, kartu jatuh ke placeholder
+// bergradasi dengan ikon program supaya tidak muncul gambar rusak.
+function ProgramCard({ program: f }) {
+  const [gagalMuat, setGagalMuat] = useState(false)
+
+  return (
+    <div className="flex flex-col bg-white border border-gray-200 rounded-xl overflow-hidden">
+      <div className="relative aspect-[16/10] bg-gradient-to-br from-teal/15 to-teal/5">
+        {f.image && !gagalMuat ? (
+          <img
+            src={f.image}
+            alt=""
+            loading="lazy"
+            onError={() => setGagalMuat(true)}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center text-teal-dark/40">
+            <f.icon size={40} stroke={1.5} />
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col flex-1 p-5">
+        <div className="flex items-center gap-3 mb-2">
+          <div className="w-10 h-10 rounded-full bg-teal/10 text-teal-dark flex items-center justify-center shrink-0">
+            <f.icon size={20} stroke={2} />
+          </div>
+          <h3 className="font-bold text-ink">{f.label}</h3>
+        </div>
+        <p className="flex-1 text-sm text-ink/60 mb-4">{f.desc}</p>
+        <Link
+          to={`/program/${f.slug}`}
+          className="group self-start inline-flex items-center gap-1 text-sm font-semibold text-teal-dark hover:text-teal transition-colors"
+        >
+          Pelajari Selengkapnya
+          <IconArrowRight size={16} stroke={2} className="transition-transform group-hover:translate-x-0.5" />
+        </Link>
+      </div>
+    </div>
   )
 }

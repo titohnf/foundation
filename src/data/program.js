@@ -10,6 +10,7 @@ import {
 export const program = [
   {
     slug: 'bimbingan-belajar',
+    image: '/images/program/bimbingan-belajar.jpg',
     icon: IconBook,
     label: 'Bimbingan Belajar Gratis',
     desc: 'Pendampingan belajar rutin untuk mata pelajaran sekolah, tanpa biaya.',
@@ -18,6 +19,7 @@ export const program = [
   },
   {
     slug: 'sekolah-karakter',
+    image: '/images/program/sekolah-karakter.jpg',
     icon: IconSparkles,
     label: 'Sekolah Karakter',
     seoTitle: 'Sekolah Karakter TERA',
@@ -27,6 +29,7 @@ export const program = [
   },
   {
     slug: 'podcast-malam-minggu',
+    image: '/images/program/podcast-malam-minggu.jpg',
     icon: IconMicrophone,
     label: 'Podcast Malam Minggu',
     desc: 'Obrolan santai setiap malam Minggu bersama sosok inspiratif.',
@@ -35,6 +38,7 @@ export const program = [
   },
   {
     slug: 'sesi-bunda',
+    image: '/images/program/sesi-bunda.jpg',
     icon: IconUsers,
     label: 'Sesi BUNDA untuk Orang Tua',
     desc: 'Ruang belajar bagi orang tua untuk mendampingi tumbuh kembang anak.',
@@ -43,6 +47,7 @@ export const program = [
   },
   {
     slug: 'kelas-siap-kerja',
+    image: '/images/program/kelas-siap-kerja.jpg',
     icon: IconBriefcase,
     label: 'Kelas Siap Kerja',
     desc: 'Bekal keterampilan praktis agar anak siap memasuki dunia kerja.',
@@ -51,6 +56,7 @@ export const program = [
   },
   {
     slug: 'field-trip',
+    image: '/images/program/field-trip.jpg',
     icon: IconBus,
     label: 'Field Trip Edukatif',
     desc: 'Belajar langsung dari pengalaman di luar kelas.',
