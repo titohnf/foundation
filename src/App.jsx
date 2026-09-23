@@ -7,6 +7,7 @@ import Anak from './pages/Anak'
 import Tentang from './pages/Tentang'
 import Kontribusi from './pages/Kontribusi'
 import Lapor from './pages/Lapor'
+import Program from './pages/Program'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/tentang" element={<Tentang />} />
           <Route path="/kontribusi" element={<Kontribusi />} />
           <Route path="/lapor" element={<Lapor />} />
+          <Route path="/program/:slug" element={<Program />} />
         </Routes>
       </main>
       <Footer />

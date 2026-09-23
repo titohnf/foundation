@@ -1,11 +1,6 @@
-const fasilitas = [
-  { emoji: '📚', label: 'Bimbingan Belajar Gratis' },
-  { emoji: '✨', label: 'Sekolah Karakter' },
-  { emoji: '🤝', label: 'Kakak Asuh' },
-  { emoji: '👨‍👩‍👧', label: 'Sesi BUNDA untuk Orang Tua' },
-  { emoji: '🎓', label: 'Kelas Akademik & UTBK' },
-  { emoji: '🚌', label: 'Field Trip Edukatif' },
-]
+import { Link } from 'react-router-dom'
+import { IconArrowRight } from '@tabler/icons-react'
+import { program } from '../data/program'
 
 const alasan = [
   {
@@ -31,8 +26,6 @@ const alasan = [
 ]
 
 export default function KenapaTera() {
-  const looped = [...fasilitas, ...fasilitas]
-
   return (
     <section className="bg-gray-50 pt-20 pb-16">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
@@ -74,20 +67,27 @@ export default function KenapaTera() {
         <p className="text-sm font-semibold text-teal-dark uppercase tracking-[0.02em]">
           Program Berkelanjutan untuk Anak Sejahtera
         </p>
-      </div>
 
-      <div
-        className="overflow-hidden mt-6"
-        style={{ maskImage: 'linear-gradient(90deg, transparent, black 8%, black 92%, transparent)' }}
-      >
-        <div className="flex w-max gap-3.5 animate-marquee">
-          {looped.map((f, i) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3.5 mt-6">
+          {program.map((f) => (
             <div
-              key={`${f.label}-${i}`}
-              className="flex items-center gap-3 w-72 shrink-0 bg-white border border-gray-200 rounded-xl p-4"
+              key={f.slug}
+              className="flex flex-col bg-white border border-gray-200 rounded-xl p-5"
             >
-              <span className="text-xl shrink-0">{f.emoji}</span>
-              <span className="text-sm font-medium text-ink">{f.label}</span>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-10 h-10 rounded-full bg-teal/10 text-teal-dark flex items-center justify-center shrink-0">
+                  <f.icon size={20} stroke={2} />
+                </div>
+                <h3 className="font-bold text-ink">{f.label}</h3>
+              </div>
+              <p className="flex-1 text-sm text-ink/60 mb-4">{f.desc}</p>
+              <Link
+                to={`/program/${f.slug}`}
+                className="group self-start inline-flex items-center gap-1 text-sm font-semibold text-teal-dark hover:text-teal transition-colors"
+              >
+                Pelajari Selengkapnya
+                <IconArrowRight size={16} stroke={2} className="transition-transform group-hover:translate-x-0.5" />
+              </Link>
             </div>
           ))}
         </div>
