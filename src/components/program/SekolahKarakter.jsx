@@ -148,7 +148,7 @@ const angkatan = [
       ],
     },
     narasi:
-      'Pada angkatan pertama, 35 anak mengikuti program ini, dan 13 anak menyelesaikan seluruh rangkaian 12 sesi. Pengalaman ini menjadi bahan evaluasi penting bagi kami untuk merancang pendekatan yang lebih fleksibel dan sesuai dengan kondisi masing-masing anak.',
+      'Pada angkatan pertama, 29 anak mengikuti program ini, dan 14 anak menyelesaikan seluruh rangkaian 12 sesi. Pengalaman ini menjadi bahan evaluasi penting bagi kami untuk merancang pendekatan yang lebih fleksibel dan sesuai dengan kondisi masing-masing anak.',
     timeline: [
       { tanggal: '4 Mei', sesi: 'Baris-berbaris' },
       { tanggal: '11 Mei', sesi: 'Berkebun' },
