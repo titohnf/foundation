@@ -1,7 +1,7 @@
 import {
   IconBook,
   IconSparkles,
-  IconMicrophone,
+  IconMoon,
   IconUsers,
   IconBriefcase,
   IconBus,
@@ -28,13 +28,13 @@ export const program = [
       'Program 12 minggu dengan 8 tema pembentukan karakter, membekali anak dengan nilai dan kebiasaan baik sebagai fondasi tumbuh kembangnya.',
   },
   {
-    slug: 'podcast-malam-minggu',
-    image: '/images/program/podcast-malam-minggu.jpg',
-    icon: IconMicrophone,
-    label: 'Podcast Malam Minggu',
-    desc: 'Obrolan santai setiap malam Minggu bersama sosok inspiratif.',
+    slug: 'sekolah-ramadan',
+    image: '/images/program/sekolah-ramadan.jpg',
+    icon: IconMoon,
+    label: 'Sekolah Ramadan',
+    desc: 'Kegiatan belajar dan ibadah bersama selama bulan Ramadan.',
     detail:
-      'Obrolan santai setiap malam Minggu bersama sosok inspiratif, membuka wawasan anak tentang cita-cita dan pengalaman hidup.',
+      'Selama bulan Ramadan, anak binaan mengikuti kegiatan belajar agama, ibadah bersama, dan penguatan akhlak untuk mengisi bulan suci dengan kebiasaan baik.',
   },
   {
     slug: 'sesi-bunda',

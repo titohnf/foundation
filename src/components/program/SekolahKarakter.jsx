@@ -11,12 +11,6 @@ import {
   IconMoonStars,
   IconMountain,
   IconRocket,
-  IconFlag,
-  IconPlant,
-  IconBuildingMosque,
-  IconSpeakerphone,
-  IconBuildingStore,
-  IconTent,
 } from '@tabler/icons-react'
 import Reveal from '../Reveal'
 import PhotoColumn from './PhotoColumn'
@@ -63,64 +57,75 @@ const nilai = [
   },
 ]
 
+const FOTO = '/images/sesi-karakter'
+
+// Urutan mengikuti 12 sesi pertemuan.
 const kegiatan = [
   {
-    icon: IconFlag,
-    color: 'blue',
-    tag: 'Disiplin',
+    foto: `${FOTO}/01-baris-berbaris.jpg`,
     title: 'Baris-berbaris',
     desc: 'Melatih kekompakan dan disiplin lewat aba-aba dan gerak bersama.',
   },
   {
-    icon: IconPlant,
-    color: 'emerald',
-    tag: 'Peduli lingkungan',
+    foto: `${FOTO}/02-berkebun.jpg`,
     title: 'Berkebun',
     desc: 'Menanam dan merawat tanaman sambil belajar peduli pada lingkungan.',
   },
   {
-    icon: IconBuildingMosque,
-    color: 'violet',
-    tag: 'Spiritual',
+    foto: `${FOTO}/03-tata-krama.jpg`,
+    title: 'Tata Krama',
+    desc: 'Belajar menyapa, meminta tolong, dan menghormati orang yang lebih tua.',
+  },
+  {
+    foto: `${FOTO}/04-praktik-sholat.jpg`,
     title: 'Praktik Wudhu & Sholat',
     desc: 'Mempraktikkan tata cara ibadah bersama pendamping dengan sabar.',
   },
   {
-    icon: IconSpeakerphone,
-    color: 'rose',
-    tag: 'Percaya diri',
-    title: 'Content Creator & Pidato',
-    desc: 'Berlatih bicara di depan teman, membuat konten, dan beradu pendapat dengan santun.',
+    foto: `${FOTO}/05-belajar-tahsin.jpg`,
+    title: 'Belajar Tahsin',
+    desc: 'Memperbaiki bacaan Al-Qur\'an sedikit demi sedikit bersama pendamping.',
   },
   {
-    icon: IconBuildingStore,
-    color: 'amber',
-    tag: 'Kemandirian',
+    foto: `${FOTO}/06-kebersihan-diri.jpg`,
+    title: 'Menjaga Kebersihan Diri',
+    desc: 'Membiasakan cuci tangan, gosok gigi, dan merawat diri sendiri.',
+  },
+  {
+    foto: `${FOTO}/07-content-creator.jpg`,
+    title: 'Content Creator',
+    desc: 'Merancang dan membuat konten sederhana, lalu berani menampilkannya.',
+  },
+  {
+    foto: `${FOTO}/08-pekerjaan-rumah-tangga.jpg`,
+    title: 'Pekerjaan Rumah Tangga',
+    desc: 'Belajar membantu pekerjaan rumah seperti menyapu, melipat, dan merapikan.',
+  },
+  {
+    foto: `${FOTO}/09-pidato-debat.jpg`,
+    title: 'Pidato & Debat',
+    desc: 'Berlatih bicara di depan teman dan beradu pendapat dengan santun.',
+  },
+  {
+    foto: `${FOTO}/10-kerajinan-tangan.jpg`,
+    title: 'Membuat Kerajinan Tangan',
+    desc: 'Mengolah bahan sederhana menjadi karya buatan sendiri.',
+  },
+  {
+    foto: `${FOTO}/11-market-day.jpg`,
     title: 'Market Day',
     desc: 'Membuka lapak kecil, belajar menghitung, dan merasakan serunya berjualan sendiri.',
   },
   {
-    icon: IconTent,
-    color: 'teal',
-    tag: 'Kepemimpinan',
+    foto: `${FOTO}/12-berkemah.jpg`,
     title: 'Berkemah',
     desc: 'Bermalam bersama, berbagi tugas, dan belajar memimpin kelompok kecil.',
   },
 ]
 
-// Placeholder sementara — ganti tiap entri jadi { src: '/images/sekolah-karakter/xxx.jpg' }
-// begitu foto aslinya tersedia.
-const fotoKiri = [
-  { label: 'Baris-berbaris', tone: 'bg-blue' },
-  { label: 'Berkebun', tone: 'bg-emerald-500' },
-  { label: 'Wudhu & Sholat', tone: 'bg-violet-500' },
-]
-
-const fotoKanan = [
-  { label: 'Pidato', tone: 'bg-rose-400' },
-  { label: 'Market Day', tone: 'bg-amber-400' },
-  { label: 'Berkemah', tone: 'bg-teal' },
-]
+// Sesi ganjil di kolom kiri, sesi genap di kolom kanan.
+const fotoKiri = kegiatan.filter((_, i) => i % 2 === 0).map((k) => ({ src: k.foto }))
+const fotoKanan = kegiatan.filter((_, i) => i % 2 === 1).map((k) => ({ src: k.foto }))
 
 const tilt = ['md:-rotate-2', 'md:rotate-1', 'md:-rotate-1', 'md:rotate-2', 'md:-rotate-1', 'md:rotate-1']
 
@@ -331,8 +336,8 @@ export default function SekolahKarakter() {
             className="h-80 md:h-[26rem] grid grid-cols-2 gap-4 overflow-hidden"
             aria-hidden="true"
           >
-            <PhotoColumn photos={fotoKiri} direction="down" />
-            <PhotoColumn photos={fotoKanan} direction="up" duration={36} />
+            <PhotoColumn photos={fotoKiri} direction="down" duration={48} />
+            <PhotoColumn photos={fotoKanan} direction="up" duration={56} />
           </div>
         </div>
       </section>
@@ -398,23 +403,22 @@ export default function SekolahKarakter() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {kegiatan.map((k, i) => (
-            <Reveal key={k.title} delay={i * 80}>
+            <Reveal key={k.title} delay={(i % 3) * 80}>
               <div
-                className={`bg-white border border-gray-200 rounded-2xl p-3 shadow-sm transition hover:rotate-0 hover:shadow-md ${tilt[i]}`}
+                className={`bg-white border border-gray-200 rounded-2xl p-3 shadow-sm transition hover:rotate-0 hover:shadow-md ${tilt[i % tilt.length]}`}
               >
-                <div
-                  className={`relative h-36 rounded-xl flex items-center justify-center mb-4 ${warna[k.color].soft}`}
-                >
-                  <div
-                    className={`w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm ${warna[k.color].icon}`}
-                  >
-                    <k.icon size={32} stroke={2} />
-                  </div>
-                  <span className="absolute top-3 left-3 bg-white/90 text-ink/70 text-xs font-semibold px-2.5 py-1 rounded-full">
-                    {k.tag}
-                  </span>
+                <div className="h-44 rounded-xl overflow-hidden bg-gray-100 mb-4">
+                  <img
+                    src={k.foto}
+                    alt={k.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="px-2 pb-2">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-teal-dark mb-1">
+                    Sesi {i + 1}
+                  </p>
                   <h3 className="font-bold text-ink mb-1">{k.title}</h3>
                   <p className="text-sm text-ink/65">{k.desc}</p>
                 </div>
